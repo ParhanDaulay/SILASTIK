@@ -1,0 +1,157 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #062470;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    background-image: url('../images/new-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.welcoming-text {
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    max-width: 80%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.permintaan-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.teks-formulir {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.logo2 {
+    height: 70px;
+}
+
+.container {
+    font-family: Helvetica, sans-serif;
+    width: 90%;
+    max-width: 500px;    
+    background-color: rgba(255, 255, 255, 0.275); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #4a4c4e;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #3252ac;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(6, 36, 112, 0.547);
+}
+
+@media (max-width: 1024px) {
+    .welcoming-text {
+        max-width: 90%;
+        font-size: 18px;
+    }
+    
+    .container {
+        width: 85%;
+        padding: 25px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .welcoming-text {
+        max-width: 100%;
+        font-size: 16px;
+        padding: 15px;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .teks-formulir {
+        font-size: 18px;
+    }
+
+    .logo2 {
+        height: 40px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+        padding: 7px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
